@@ -1,0 +1,29 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "A basic implementation of Slack chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server:watch": "nodemon server.js",
+    "webpack:build": "webpack --mode production",
+    "webpack:watch": "webpack --watch",
+    "css:build": "npx postcss ./src/public/css/main.css -o ./dist/main.css",
+    "css:watch": "npx postcss --watch ./src/public/css/main.css -o ./dist/main.css"
+  },
+  "author": "Chau Dinh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "postcss": "^7.0.7",
+    "postcss-cli": "^6.1.0",
+    "postcss-import": "^12.0.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
